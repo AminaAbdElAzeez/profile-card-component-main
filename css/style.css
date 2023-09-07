@@ -1,0 +1,93 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+}
+:root {
+    --darkCyan: hsl(185, 75%, 39%);
+    --veryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+    --darkGrayishBlue: hsl(227, 10%, 46%);
+    --darkGray: hsl(0, 0%, 93%);
+}
+
+/* Profile Section */
+.profile {
+    height: 100vh;
+    background-color: var(--darkCyan);
+    background-image: url(../images/bg-pattern-top.svg) , url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat , no-repeat;
+    background-position: right 48vw bottom 48vh , left 49vw top 49vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile .container {
+    width: 340px;
+    background-color:#fff;
+    position: relative;
+    text-align: center;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.profile .container .bg img {
+    width: 100%;
+    height: 150px;
+    border-radius: 15px 15px 0 0;
+    -webkit-border-radius: 15px 15px 0 0;
+    -moz-border-radius: 15px 15px 0 0;
+    -ms-border-radius: 15px 15px 0 0;
+    -o-border-radius: 15px 15px 0 0;
+}
+.profile .container .img img {
+    position: absolute;
+    top: 100px;
+    left: 120px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.profile .container .title {
+    margin: 70px 0 5px 0;
+    font-size: 18px;
+    letter-spacing: 0.7px;
+    color: var(--veryDarkDesaturatedBlue);
+}
+.profile .container .title > span {
+    color: var(--darkGrayishBlue);
+    margin-left: 5px;
+    font-weight: 100;
+}
+.profile .container .state {
+    color: var(--darkGrayishBlue);
+    display: block;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+.profile .container hr {
+    border: 1px solid var(--darkGray);
+}
+.profile .container .rates {
+    padding: 25px 45px;
+    display: flex;
+    justify-content: space-between;
+}
+.profile .container .rates .item h2 {
+    font-size: 18px;
+    color: var(--veryDarkDesaturatedBlue);
+}
+.profile .container .rates .item span {
+    font-size: 11px;
+    color: var(--darkGrayishBlue);
+    letter-spacing: 1.7px;
+}
